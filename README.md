@@ -50,9 +50,9 @@ Open a new shell and type `base16` followed by a tab to perform tab completion.
 
 the profile_helper will update a ~/.vimrc_background file that will have your current the colorscheme, you just need to source this file in your vimrc: i.e. (remove the base16colorspace line if not needed)
 
-    if filereadable(expand("~/.vimrc_background"))
+    if filereadable(expand("~/.config/nvim/colors-init"))
       let base16colorspace=256
-      source ~/.vimrc_background
+      source ~/.config/nvim/colors-init
     endif
 
 ## Troubleshooting
